@@ -1,0 +1,8 @@
+.button-component {
+    height: 53px;
+    font-weight: 700;
+    /* color: white;
+    background: #6052FF; */
+    border-radius: 8px;
+    /* padding: auto 2rem; */
+}

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.image-jumbotron {
+    height: 639px;
+    background-image: url('../../img/header.jpg');
+    background-size: cover;
+    background-position: 90% 100%;
+    border-radius: 0 0 0 8px;
+}
+
+.col-header.col {
+    padding: 0;
+}
+
+.link-a.justify-content-end.flex-grow-1.pe-3.navbar-nav a {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;    
+    font-weight: 400;
+    color: #000 !important;
+    text-indent: 3px;
+    line-height: 22.5px;
+}
+.link-a.justify-content-end.flex-grow-1.pe-3.navbar-nav a:hover {
+    background-color: #6052FF;
+    border-radius: 3px;
+    color: white !important;
+    text-decoration-color: white;
+}
+.navbar-light .navbar-brand {
+    color: #000;
+    font-weight: 500;
+}
+
+.main-header {
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 500px;
+}
+
+.container-content-header{
+    height: 90%;
+}
+
+.sub-content {
+    width: 352px;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.button-layanan {
+    background-color: #6052FF;
+    border-radius: 8px;
+    width: 10rem;
+    height: 3.4rem;
+}
+
+/* Artikel 2 */
+.content-2 {
+    margin-top: 10rem;
+}
+
+.card-title {
+    width: 227px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 50px;
+    margin-bottom: 65px;
+}
+
+.deskripsi-card {
+    width: 227px;
+
+}
+
+.card {
+    width: 337px;
+    height: 706px;
+    border-radius: 8px;
+}
+
+.card:hover {
+    border-color: #0400C2;
+}
+
+.card-image {
+    width: 60px;
+    height: 60px;
+}
+
+.harga {
+    width: 200px;
+    font-family: 700;
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+.button-card {
+    width: 163px;
+    height: 53px;
+    color: white;
+    background-color: #6052FF;
+    border-radius: 8;
+}
+/* Penutup Artikel 2 */
+
+/* Paket Custome */
+.Content-3 {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.Content-3 .h3  {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.deskripsi-custome {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    width: 460px;
+}
+
+.btn-custome {
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #6052FF;
+    border-radius: 8;
+    height: 53px;
+}
+/* Penutup Paket Custome */
+
+/* Footer */
+.footer-container {
+    border-top: 2px solid #e1e1;
+    padding: 1rem 0;
+}
+
+.footer-container p {
+    font-weight: 300;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+}
+/* Penutup Footer */
+
+/* Responsive */
+@media  (max-width: 1047px) {
+    .container-content.d-flex.flex-column{
+        height: 46vh;
+        width: 100%;
+        margin-top: 2rem;
+    }
+ 
+    .image-jumbotron.col-md-6 {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    * {
+        font-size: 15px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .container-card.d-flex.justify-content-md-evenly.mt-5.col {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .card-content {
+        align-items: center;
+    }
+}
+
+@media (max-width: 512px) {
+    .deskripsi-custome {
+        width: 100%;
+    }
+    .main-header, .sub-content {
+        width: 100%;
+    }
+}
+/* Penutup */

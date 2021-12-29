@@ -1,0 +1,14 @@
+a {
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+
+span {
+    color: #6052FF;
+}
+
+span:hover {
+    color: black;
+}

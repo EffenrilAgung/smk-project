@@ -1,0 +1,40 @@
+.Pembayaran.h2 {
+    text-align: center;
+}
+.rounded.border.border-1.mx-auto p{
+    text-align: center;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+.h6.format-pembayaran {
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.h6.format-pembayaran div {
+    font-weight: 500;
+    color: blue;
+}
+
+.Pembayaran{
+    font-weight: 200;
+    margin: 0;
+}
+
+.button-pembayaran {
+    background: #6052FF;
+    color: white;
+}
+
+.outline-danger {
+    background-color: white;
+    color: red;
+    border-color: red;
+    width: 14rem;
+}
+
+.outline-danger:hover {
+    background-color: red;
+    color: white;
+}
