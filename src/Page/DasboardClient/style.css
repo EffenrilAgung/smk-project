@@ -1,0 +1,17 @@
+.h2,.h6 {
+    font-weight: 700;
+    margin-top: 150px;
+    margin-bottom: 70px;
+}
+
+.h5 {
+    margin: 150px 0 12px 0;
+}
+
+.btn-ubahData {
+    width: 241px;
+    background-color: #6052ff;
+}
+.border.pengumuman.border-1.d-flex.align-items-center.justify-content-center.col {
+    min-height: 30vh;
+}
