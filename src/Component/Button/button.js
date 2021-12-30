@@ -8,11 +8,11 @@ import { propTypes } from 'react-bootstrap/esm/Image'
 function ButtonComponent(props) {
     console.log(props)
         return (
-            <div>
+        
                 <Button className={`button-component ${props.cname}`}>
                     {props.children}
                 </Button>
-            </div>
+     
         )
 }
 

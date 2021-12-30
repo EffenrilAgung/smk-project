@@ -1,0 +1,22 @@
+.btn-ubah-paket {
+    background: #6052FF;
+    margin: 70px auto 0 auto;
+    width: 163px;
+    color: white;
+}
+
+.btn-berita-paket {
+    background: #6052FF;
+    margin: 32px auto 0 auto;
+    width: 163px;
+    color: white;
+}
+
+.h2.text-center {
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+.rounded.rounded-circle {
+    width: 60px;
+    height: 60px;
+}

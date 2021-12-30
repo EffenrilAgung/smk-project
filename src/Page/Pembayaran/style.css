@@ -35,6 +35,7 @@
 }
 
 .outline-danger:hover {
+    border-color: red;
     background-color: red;
     color: white;
 }

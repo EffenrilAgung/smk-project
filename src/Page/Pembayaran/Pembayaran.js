@@ -50,7 +50,7 @@ class Pembayaran extends React.Component {
                 <Row className="mt-3">
                     <Link to='/'>
                     <Col className='d-flex justify-content-center align-items-center'>
-                        <ButtonComponent cname='outline-danger'>Cancle</ButtonComponent>
+                        <ButtonComponent cname='outline-danger'>Batal</ButtonComponent>
                     </Col>
                     </Link>
                 </Row>
