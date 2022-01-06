@@ -16,6 +16,12 @@ import ButtonComponent from "../../Component/Button/button";
 import Profile from "../../img/profile.jpg"
 
 class DasboardAdmin extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      deskripsiImage : 'Foto profil'
+    }
+  }
   render() {
     return (
       <>
@@ -42,7 +48,7 @@ class DasboardAdmin extends React.Component {
                 </NavDropdown>
               </Nav>
               <Nav.Link>lOGOUT</Nav.Link>
-              <img src={Profile} className="rounded rounded-circle border border-1"/>
+              <img src={Profile} className="rounded rounded-circle border border-1" alt={this.state.deskripsiImage}/>
             </Navbar.Collapse>
           </Container>
         </Navbar>

@@ -7,13 +7,19 @@ import ButtonComponent from '../../Component/Button/button'
 import {Link} from 'react-router-dom'
 
 class PembayaranFinal extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          deskripsiImage : 'Final Image'
+        }
+      }
     render() {
         return (
             <Container>
                 <Row>
                     <Col className='final-payment'>
                         <p className='h2 title-payment'>Hore! Berhasil</p>
-                        <img src={imagePayment} className='image-final' width='40%' fluid/>
+                        <img src={imagePayment} className='image-final' width='40%' fluid alt={this.state.deskripsiImage}/>
                         <p className='text-center'>Kami akan menginformasikan status Pembayaran mu via Wa Berdoa Saja Semoga Admin Dalam kondisi Sehat Agar Pembayaranmu Cepat Dikonfirmasi</p>
                         <Link to='/'><ButtonComponent cname='btn-back'>Kembali Ke Halaman Awal</ButtonComponent></Link>
                         <ButtonComponent cname='konfirm-wa'>Konfirmasi Wa</ButtonComponent>

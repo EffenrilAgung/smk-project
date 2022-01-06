@@ -9,7 +9,7 @@ import {
   Form,
   Button,
 } from "react-bootstrap";
-import "./style.css";
+import "./style-dasboard-client.css";
 import Profile from "../../img/profile.jpg";
 import ButtonComponent from "../../Component/Button/button";
 import CardEnam from "../../img/icon/logo.png";
@@ -28,33 +28,44 @@ class DasboardClient extends React.Component {
     };
   }
   render() {
+    const durasiPaket = 'durasi-paket'
+    const paketDigunakan = 'paket-digunakan'
+    const beliPaket = 'beli-paket'
+    const pengumuman = 'pengumuman'
+    const scrollingSmooth = (value) => {
+      let elementId = document.getElementById(`${value}`)
+      elementId.scrollIntoView({behavior: 'smooth'})
+    }
     return (
       <>
         <Navbar className="shadow-sm" expand="lg">
           <Container>
-            <Navbar.Brand href="#home">DUDI TKJ SMK 1 NATAL</Navbar.Brand>
+            <Navbar.Brand>DUDI TKJ SMK 1 NATAL</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto"></Nav>
               <Nav className="justify-content-end d-flex">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#home">Durasi Paket</Nav.Link>
-                <Nav.Link href="#home">Paket Digunakan</Nav.Link>
-                <Nav.Link href="#home">Paket Layanan</Nav.Link>
-                <Nav.Link href="#home">Pengumuman</Nav.Link>
+                <Link to='/'>
+                  <Nav.Link >Home</Nav.Link>
+                </Link>
+                <Nav.Link onClick={() => scrollingSmooth(durasiPaket)}>Durasi Paket</Nav.Link>
+                <Nav.Link onClick={() => scrollingSmooth(paketDigunakan)}>Paket Digunakan</Nav.Link>
+                <Nav.Link onClick={() => scrollingSmooth(beliPaket)}>Paket Layanan</Nav.Link>
+                <Nav.Link onClick={() => scrollingSmooth(pengumuman)}>Pengumuman</Nav.Link>
               </Nav>
               <Nav.Link>lOGOUT</Nav.Link>
               <img
                 src={Profile}
                 className="rounded rounded-circle border border-1"
+                alt = {this.state.deskripsiImage}
               />
             </Navbar.Collapse>
           </Container>
         </Navbar>
         <Container className='mb-5'>
           <Row>
-            <Col>
-              <p className="h2" style={{width: '224px', marginBottom:'21px'}}>Durasi Sisa Paket</p>
+            <Col >
+              <p id='durasi-paket' className="h2 dasboard-client" style={{width: '224px', marginBottom:'21px'}}>Durasi Sisa Paket</p>
             </Col>
           </Row>
           <Row>
@@ -66,8 +77,8 @@ class DasboardClient extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col className="d-flex justify-content-center">
-              <p className="h2">Ubah <span>Data</span></p>
+            <Col  className="d-flex justify-content-center">
+              <p id='ubah-data' className="h2 dasboard-client">Ubah <span>Data</span></p>
             </Col>
           </Row>
           <Row>
@@ -112,8 +123,8 @@ class DasboardClient extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col className="d-flex justify-content-center">
-              <p className="h2">Paket Yang Digunakan</p>
+            <Col  className="d-flex justify-content-center">
+              <p id='paket-digunakan' className="h2 dasboard-client">Paket Yang Digunakan</p>
             </Col>
           </Row>
           <Row>
@@ -139,8 +150,8 @@ class DasboardClient extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col className="d-flex justify-content-center">
-              <p className="h2">Beli Paket Layanan</p>
+            <Col  className="d-flex justify-content-center">
+              <p  id='beli-paket' className="h2 dasboard-client">Beli Paket Layanan</p>
             </Col>
           </Row>
           <Row>
@@ -212,8 +223,8 @@ class DasboardClient extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col className="d-flex justify-content-center">
-              <p className="h2">Pengumuman</p>
+            <Col  className="d-flex justify-content-center">
+              <p id='pengumuman' className="h2 dasboard-client">Pengumuman</p>
             </Col>
           </Row>
           <Row>
@@ -225,7 +236,7 @@ class DasboardClient extends React.Component {
           </Row>
           <Row>
             <Col>
-              <p className="h5">Ada Masalah ?</p>
+              <p className="h5 problem">Ada Masalah ?</p>
               <ButtonComponent cname="btn-ubahData">
                 Hubungi Admin
               </ButtonComponent>
